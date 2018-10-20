@@ -1,0 +1,66 @@
+<!doctype html>
+<html>
+  <head>
+    <title>BinPacking</title>
+    <meta charset="utf-8" />
+    <link href="style.css" rel="stylesheet" type="text/css">
+  </head>
+<body>
+
+    <div id="formObj">
+    	<div class="title">Ajouter bloc</div>
+    	<table>
+    		<tr>
+    			<td>Longueur</td>
+    			<td><input type="text" id="L"></td>
+    		</tr>
+
+    		<tr>
+    			<td>Largeur</td>
+    			<td><input type="text" id="h"></td>
+    		</tr>
+
+
+
+    		<tr>
+    			<td><input type="button" value="Random" onclick="ranDims()"></td>
+    			<td><input type="button" value="Ajouter" onclick="ajouterListeObj()"></td>
+    		</tr>
+    	</table>
+    </div>
+
+    <div id="listeObj">
+    	<div class="title">Liste blocs</div>
+    	<table id="tableListeObj" style="width: 230px; text-align: center;">
+    	</table>
+    </div>
+
+    <div id="genObj">
+    	<div class="title">Gérer Liste</div>
+    	<table>
+    		<tr><input id="file" type="file" /></tr>
+    		<tr>
+    			<td><input type="button" value="Charger" onclick="lireFichierListeObj()"></td>
+    			<td><input type="button" value="Placer" onclick="genererListeObj()"></td>
+    			<td><input type="button" value="Supprimer" onclick="supprListeObj()"></td>
+    		</tr>
+    	</table>
+    </div>
+
+  <div id="container"></div>
+  <div id="reload" onclick="location.href='../BinPacking2D/Binpack2D.html'">RF</div>
+  <div id="otherView" onclick="location.href='../BinPacking3D/Binpack3D.html'">3D</div>
+  <div id="stats">
+    <b><p id="perc"></p></b>
+    <br/>
+    <p id="nbb"></p>
+    <p id="nbbp"></p>
+    <p id="nbbnp"></p>
+    <b><p id="rend"></p></b>
+  </div>
+
+  <script src="js/three.min.js"></script>
+  <script src="js/classes.js"></script>
+  <script src="js/binpacking.js"></script>
+</body>
+</html>

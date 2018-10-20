@@ -1,0 +1,101 @@
+body{
+	overflow:hidden;
+	}
+	#formObj{
+	position: fixed;
+	padding-top: 10px;
+	padding-left: 10px;
+	top: 10px;
+	left: 10px;
+	width: 250px;
+	background-color: #CCCCCC;
+	opacity: 0.5;
+	border: solid 1px black ;
+}
+
+#listeObj{
+	position: fixed;
+	padding-top: 10px;
+	padding-left: 10px;
+	top: 169px;
+	left: 10px;
+	width: 250px;
+	height: 470px;
+	background-color: #CCCCCC;
+	opacity: 0.5;
+	border: solid 1px black;
+	overflow: scroll;
+	overflow-x : hidden;
+
+}
+
+#genObj{
+	position: fixed;
+	padding-top: 10px;
+	padding-left: 10px;
+	top: 670px;
+	left: 10px;
+	width: 250px;
+	height: 100px;
+	background-color: #CCCCCC;
+	opacity: 0.5;
+	border: solid 1px black;
+	overflow: hidden;
+
+
+}
+
+#otherView{
+	position: fixed;
+	padding-top: 20px;
+	padding-left: 20px;
+	top: 10px;
+	left: 92%;
+	width: 40px;
+	height: 40px;
+	background-color: #CCCCCC;
+	opacity: 0.5;
+	border: solid 1px black;
+	border-radius: 50%;
+	overflow: hidden;
+}
+
+#stats{
+	position: fixed;
+	padding-top: 20px;
+	padding-left: 20px;
+	top: 500px;
+	left: 85%;
+	width: 170px;
+	height:250px;
+	background-color: #CCCCCC;
+	opacity: 0.5;
+	border: solid 1px black;
+	overflow: hidden;
+}
+
+#reload{
+	position: fixed;
+	padding-top: 20px;
+	padding-left: 20px;
+	top: 100px;
+	left: 92%;
+	width: 40px;
+	height: 40px;
+	background-color: #CCCCCC;
+	opacity: 0.5;
+	border: solid 1px black;
+	border-radius: 50%;
+	overflow: hidden;
+}
+
+#otherView:hover, #reload:hover{
+	cursor: pointer;
+}
+
+.title{
+	width: 90%;
+	margin-bottom: 10px;
+	text-align: center;
+	font-weight: bold;
+}
