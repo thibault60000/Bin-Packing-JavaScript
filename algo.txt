@@ -1,0 +1,50 @@
+List de rectangle
+Liste de rectangle placé
+
+Rotate chaque rectangle pour que largueur >= taille 
+Organiser les rectangle de la list de la plus grande largueur à la plus petite
+
+for Each emplacement (plus_a_gauche, plus_grand_voisin) faire
+ 	tant que rectangle ne sont pas placés 
+ 
+		trouver le plus petit ecart
+
+		if (le meilleur rectangle == True) then
+			placer le meilleur rectangle en le placant (ajouter dans list rectanlge placé)
+			Mettre à jour visualement
+			retirer la forme de la liste
+		else
+			parcourir la liste jusqua trouver un rectangle ayant la taille pour pouvoir être placé
+		end if
+
+	fin tant que
+
+
+while Optimisation Not Finished }
+Trouver la plus grande hauteur 
+if (largeur de la forme >= hauteur de la forme)}
+ 	
+	
+	Optimisation Finished
+	Retirer la forme de la liste (ajouter dans list rectangle placé)
+}
+else }
+ Rotate la forme de 90°
+	if (forme rentre) } 
+		Optimisation Finished
+		Retirer la forme du tableau (ajouter dans list rectangle placé)
+	}
+	else
+		passer au rectangle suivant de la liste jusqua trouver un rectangle ayant la taille pour pouvoir être placé
+	end if
+
+
+end if
+if (liste_de_rectangle == vide)
+}
+	Optimisation finie (mettre à jour la forme)
+	Quitter
+}
+
+	
+Return Best Solution
